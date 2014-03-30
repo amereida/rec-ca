@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>Pausing</title>
+
+	<style type="text/css">
+	* {
+		margin:0;
+		padding:0;
+	}
+
+	html, body {
+		width:100%;
+		height:100%;
+	}
+
+	body {font-family:sans-serif;}
+
+	body > div {
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background:transparent center no-repeat;
+		background-size:cover;
+		overflow: hidden;
+	}
+
+	body > div:nth-child(1) {
+		background-color: #2fcf9e;
+	}
+
+	body > div:nth-child(2) {
+		background:#f0f0f0;
+		
+	}
+
+	body > div:nth-child(3) {
+		background-color: #f44618;
+	}
+
+	.box {
+		position:absolute;
+		left:0;
+		top: 0;
+		height:100%;
+		background: #09f;
+		overflow: hidden;
+	}
+
+	p {margin:1em 0;}
+	</style>
+</head>
+
+<body>
+	<div data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+		<p>Se dice que la prueba de un sistema puede ser un modelo. Si éste está bien constituido, aquél –por reflejo– se demuestra.</p>
+			
+		<p>Se piensa, también, que la utopía puede operar como modelo, al punto que la “realidad”, que tiene lugar mundano, se hace tanto más sí misma, cuanto más se aproxima a la utopía, que por definición no tiene “aún” ese tipo de lugar.</p>
+		
+		<p>A veces puede entenderse que ese “no-lugar” de la utopía caracteriza a ciertos arquetipos orientadores cuya propiedad, de suyo, sería precisamente no ser “reales”, sino modos a los cuales la realidad mundana se atiene. En general: una suerte de no-lugar que da lugar.</p>
+		
+		<p>Inversamente al modelo matemático o lógico, lo propio de la utopía es su no-estar para servir de prueba a lo que va estando.</p>
+	</div>
+
+	<div data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">
+		<p>Un trabajo para la pura aparición ¿no es realmente <em>“poiesis”</em>? Si así fuera se abren en ella todas sus manifestaciones, su ser, meras apariciones, apariencias, espejismos.</p>
+			
+		<p>Tal vez la poesía, de hecho, resta esa dimensión a que aludimos; tal vez supone la suspensión de toda incredulidad, según Coleridge, y se expresa desde esa creencia a todos los oficios. De ser esto posible se abre la posibilidad de un quehacer concreto y real, de un complejo de oficios <em>poéticos</em> cuya manifestación es sólo aparecer. ¿No será ese complejo de oficios “ciudad”?</p>
+		
+		<p>Tanto las tareas como las relaciones se juegan con una dimensión restada, digamos que se adelgazan. Y –¿por qué no?– adelgazan el espíritu. (¿No vendrá a ser ese adelgazamiento la verdadera <em>“finesse d’esprit”</em>?). Acaso una manera de dar lugar a una suerte de cortesía espiritual. A una cierta distancia entre lo que se presupone y lo que se sabe. Vale decir, una extensión que da cabida al otro, un modo de estar uno mismo en el otro: hospitalidad. Acaso la hospitalidad no sea en su más aguda manifestación otra cosa que la capacidad de oír, de darle al otro el medio para ser oído. (¿No consuena aquí el viejo adagio que dice “mi libertad termina donde comienza la tuya”?)</p>
+		<div class="box" data-100p="width:0%;" data-_box-100p="width:100%">
+			<p>esta es la caja</p>
+		</div>
+	</div>
+
+	<div data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);">
+		<p>La ciudad abierta o complejidad poética de oficios (y vivir lo es también) es de hecho un espejismo –concreto y real– que supone una disponibilidad alta y el “alguna parte” (oasis) real y concreto pero que únicamente se torna visible (“allí”) en la mera aparición, sin espesor. Por cierto que todo arte establece un rigor. Tal vez sería del caso pensar una leve corrección de matices a propósito de la utopía. Por ejemplo, si ella fuese más que un no-lugar o un a-lugar un “sin-lugar” que se refleja concretamente en un mero ser-lugar.Digamos que: “ahora y allí” (¿kairos?), indiferentes a cualesquiera consecuencias. Quizás.</p>
+	</div>
+
+	<!-- call skrolls-->
+	<script type="text/javascript" src="dist/skrollr.min.js"></script>
+	<script type="text/javascript">
+	skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			box: '150p'
+		}
+	});
+	</script>
+</body>
+
+</html>
